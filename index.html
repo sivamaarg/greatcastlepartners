@@ -1,0 +1,2149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Great Castle Partners — Capital. Wisdom. Purpose.</title>
+<meta name="description" content="A woman-led private investment and advisory platform founded by Marina Smith and Steven Smith. Investing in transformative businesses, cultivating leadership, and championing the next generation of entrepreneurs." />
+<meta name="theme-color" content="#0E0B08" />
+<meta property="og:title" content="Great Castle Partners — Capital. Wisdom. Purpose." />
+<meta property="og:description" content="Building Legacies. Backing Vision. Empowering Possibility." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   Great Castle Partners — Editorial Private Capital
+   ========================================================= */
+
+:root{
+  /* Palette — warm ivory paper, ink, burnt orange anchor */
+  --paper:        #F6EEE2;
+  --paper-soft:   #F0E3CE;
+  --paper-deep:   #E8D5B6;
+  --ink:          #0E0B08;
+  --ink-soft:     #1C1812;
+  --ink-mute:     #3D362D;  /* strengthened for WCAG AA compliance on warm paper */
+  --line:         #2A241D;
+  --line-soft:    rgba(14,11,8,0.14);
+
+  --orange:       #D85A1A;   /* signature — burnt copper, Bentley-inspired */
+  --orange-deep:  #A8390C;
+  --orange-rich:  #C44A12;   /* mid-tone for fills */
+  --orange-glow:  #F08040;   /* highlight on dark backgrounds */
+  --orange-soft:  #F4A574;   /* tinted highlights */
+  --copper:       #B8501F;   /* metallic depth */
+  --gold:         #B88A4A;
+  --gold-soft:    #D9B57E;
+
+  --serif:  "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --sans:   "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --maxw: 1380px;
+  --gutter: clamp(20px, 4vw, 56px);
+
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+
+body{
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.55;
+  font-feature-settings:"ss01","ss02","cv11";
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+
+/* Paper grain — subtle warmth across the whole site */
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  background:
+    radial-gradient(1400px 900px at 80% -10%, rgba(216,90,26,.16), transparent 60%),
+    radial-gradient(1000px 800px at -10% 110%, rgba(184,80,31,.13), transparent 55%);
+  pointer-events:none; z-index:0;
+}
+body::after{
+  content:"";
+  position:fixed; inset:0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.04  0 0 0 0 0.03  0 0 0 0.18 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity:.35;
+  mix-blend-mode:multiply;
+  pointer-events:none; z-index:1;
+}
+
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+button{ font:inherit; color:inherit; background:none; border:0; cursor:pointer; }
+
+/* ---------- Typography system ---------- */
+.eyebrow{
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-mute);
+}
+.eyebrow .dot{
+  display:inline-block; width:5px; height:5px; border-radius:50%;
+  background: var(--orange); margin-right:10px; vertical-align:middle;
+  transform: translateY(-1px);
+}
+
+h1,h2,h3,h4{ font-family: var(--serif); font-weight:400; letter-spacing:-.01em; }
+
+.display{
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(54px, 9.4vw, 156px);
+  line-height: .92;
+  letter-spacing: -.035em;
+}
+.display em{
+  font-style: italic;
+  font-weight: 300;
+  color: var(--orange);
+  font-feature-settings:"ss01";
+}
+
+.h-section{
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(36px, 5.4vw, 76px);
+  line-height: 1;
+  letter-spacing: -.025em;
+}
+.h-section em{ font-style: italic; color: var(--orange); font-weight:300; }
+
+.h-card{
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.1;
+  letter-spacing: -.015em;
+}
+
+.lede{
+  font-family: var(--serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 27px);
+  line-height: 1.35;
+  color: var(--ink-soft);
+  letter-spacing:-.01em;
+}
+
+.body-rich{ font-size: 17px; line-height: 1.65; color: var(--ink-soft); }
+.body-rich p + p{ margin-top: 1em; }
+
+/* ---------- Layout primitives ---------- */
+.wrap{ max-width: var(--maxw); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); position:relative; z-index:2; }
+.section{ padding: clamp(80px, 11vw, 160px) 0; position:relative; z-index:2; }
+.rule{ height:1px; background: var(--line-soft); border:0; }
+.section-num{
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--orange-deep);
+  letter-spacing:.02em;
+}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+.nav{
+  position: fixed; top:0; left:0; right:0;
+  z-index: 50;
+  padding: 18px 0;
+  transition: background .35s var(--ease), backdrop-filter .35s var(--ease), padding .35s var(--ease), border-color .35s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.nav.scrolled{
+  background: rgba(245,239,230,.78);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid var(--line-soft);
+  padding: 12px 0;
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
+
+.brand{
+  display:flex; align-items:baseline; gap:10px;
+  font-family: var(--serif);
+}
+.brand .mark{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: -.02em;
+  line-height: 1;
+}
+.brand .mark em{ color: var(--orange); }
+.brand .sub{
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  border-left: 1px solid var(--line-soft);
+  padding-left: 10px;
+}
+
+.nav-links{ display:flex; align-items:center; gap: 28px; }
+.nav-links a{
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing:.02em;
+  color: var(--ink-soft);
+  position:relative;
+  padding: 6px 0;
+}
+.nav-links a::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:1px;
+  background: var(--orange); transform: scaleX(0); transform-origin: left;
+  transition: transform .4s var(--ease);
+}
+.nav-links a:hover{ color: var(--ink); }
+.nav-links a:hover::after{ transform: scaleX(1); }
+
+.nav-cta{
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight:500;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 11px 18px;
+  border-radius: 999px;
+  display:inline-flex; align-items:center; gap:8px;
+  transition: background .3s var(--ease), color .3s var(--ease), transform .3s var(--ease);
+}
+.nav-cta:hover{ background: var(--orange-deep); transform: translateY(-1px); }
+.nav-cta::after{ content:"→"; transition: transform .3s var(--ease); }
+.nav-cta:hover::after{ transform: translateX(3px); }
+
+.menu-btn{
+  display:none; width:44px; height:44px; border-radius:50%;
+  border: 1px solid var(--line-soft);
+  align-items:center; justify-content:center;
+}
+.menu-btn span{ display:block; width:18px; height:1.5px; background: var(--ink); position:relative; }
+.menu-btn span::before, .menu-btn span::after{
+  content:""; position:absolute; left:0; width:18px; height:1.5px; background: var(--ink);
+}
+.menu-btn span::before{ top:-6px; }
+.menu-btn span::after{ top:6px; }
+
+@media (max-width: 900px){
+  .nav-links, .nav-cta{ display:none; }
+  .menu-btn{ display:flex; }
+}
+
+/* Mobile menu */
+.mobile-menu{
+  position: fixed; inset:0; z-index:60;
+  background: var(--paper);
+  transform: translateY(-100%); transition: transform .55s var(--ease);
+  display:flex; flex-direction:column;
+}
+.mobile-menu.open{ transform: translateY(0); }
+.mobile-menu-top{
+  display:flex; justify-content:space-between; align-items:center;
+  padding: 22px var(--gutter); border-bottom: 1px solid var(--line-soft);
+}
+.mobile-menu nav{
+  flex:1; display:flex; flex-direction:column; justify-content:center;
+  padding: 0 var(--gutter); gap: 6px;
+}
+.mobile-menu nav a{
+  font-family: var(--serif);
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight:300;
+  letter-spacing:-.02em;
+  line-height:1.1;
+  display:block;
+  border-bottom: 1px solid var(--line-soft);
+  padding: 14px 0;
+  transition: color .3s var(--ease), padding .3s var(--ease);
+}
+.mobile-menu nav a:hover{ color: var(--orange); padding-left: 10px; }
+.close-x{ width:44px; height:44px; border-radius:50%; border:1px solid var(--line-soft); display:flex; align-items:center; justify-content:center; font-size:20px; }
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  padding-top: 140px;
+  padding-bottom: clamp(60px, 8vw, 120px);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: end;
+  position:relative;
+}
+
+.hero-meta{
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap: 16px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line-soft);
+  margin-bottom: clamp(40px, 6vw, 70px);
+}
+.hero-meta .item{ display:flex; align-items:center; gap:10px; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color: var(--ink-mute); }
+.hero-meta .item .dot{ width:5px; height:5px; border-radius:50%; background: var(--orange); }
+
+.hero h1{ position:relative; }
+.hero h1 .l1, .hero h1 .l2, .hero h1 .l3{ display:block; overflow:hidden; }
+.hero h1 .inner{ display:inline-block; transform: translateY(110%); animation: rise 1.1s var(--ease) forwards; }
+.hero h1 .l1 .inner{ animation-delay:.1s; }
+.hero h1 .l2 .inner{ animation-delay:.25s; }
+.hero h1 .l3 .inner{ animation-delay:.4s; }
+
+@keyframes rise{ to{ transform: translateY(0); } }
+@keyframes fade{ from{ opacity:0; transform: translateY(14px); } to{ opacity:1; transform: translateY(0); } }
+
+.hero-foot{
+  margin-top: clamp(50px, 7vw, 90px);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  opacity:0; animation: fade .9s var(--ease) .9s forwards;
+}
+.hero-foot .lede{ max-width: 540px; }
+
+.hero-ctas{ display:flex; flex-wrap:wrap; gap: 12px; justify-content:flex-end; }
+.btn{
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing:.02em;
+  padding: 14px 22px;
+  border-radius: 999px;
+  display:inline-flex; align-items:center; gap:10px;
+  transition: all .3s var(--ease);
+  white-space:nowrap;
+}
+.btn .arrow{ display:inline-block; transition: transform .3s var(--ease); }
+.btn:hover .arrow{ transform: translateX(4px); }
+
+.btn-primary{ background: var(--ink); color: var(--paper); }
+.btn-primary:hover{ background: var(--orange-deep); }
+
+.btn-ghost{ border: 1px solid var(--line-soft); color: var(--ink); }
+.btn-ghost:hover{ border-color: var(--ink); background: var(--ink); color: var(--paper); }
+
+.btn-orange{ background: var(--orange-deep); color: var(--paper); }
+.btn-orange:hover{ background: var(--ink); }
+
+@media (max-width: 800px){
+  .hero-foot{ grid-template-columns: 1fr; gap: 32px; }
+  .hero-ctas{ justify-content:flex-start; }
+}
+
+/* Marquee strip */
+.strip{
+  border-top: 1px solid var(--orange-deep);
+  border-bottom: 1px solid var(--orange-deep);
+  padding: 20px 0;
+  background: linear-gradient(90deg, var(--orange-deep) 0%, var(--copper) 50%, var(--orange-deep) 100%);
+  overflow:hidden;
+  position:relative; z-index:2;
+}
+.strip-track{
+  display:flex; gap: 60px;
+  white-space: nowrap;
+  animation: slide 40s linear infinite;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 24px);
+  color: var(--paper);
+  font-weight:300;
+}
+.strip-track span{ display:inline-flex; align-items:center; gap: 60px; }
+.strip-track .sep{
+  display:inline-block; width:6px; height:6px; border-radius:50%; background: var(--paper);
+  vertical-align: middle; transform: translateY(-3px);
+  opacity:.7;
+}
+@keyframes slide{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+
+/* =========================================================
+   PHILOSOPHY (3 pillars)
+   ========================================================= */
+.phil-head{
+  display:grid; grid-template-columns: 1fr 1.4fr; gap: clamp(30px, 6vw, 80px);
+  align-items: end;
+  margin-bottom: clamp(50px, 7vw, 90px);
+}
+.phil-head .label{ display:flex; flex-direction:column; gap:14px; }
+.phil-head h2 em{ font-style:italic; }
+
+@media (max-width: 800px){ .phil-head{ grid-template-columns: 1fr; } }
+
+.pillars{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line-soft);
+}
+.pillar{
+  padding: 44px 36px 50px;
+  border-right: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+  position:relative;
+  background: transparent;
+  transition: background .4s var(--ease);
+  display:flex; flex-direction:column; gap: 18px;
+  min-height: 360px;
+}
+.pillar:last-child{ border-right: 0; }
+.pillar:hover{ background: var(--paper-soft); }
+.pillar .num{
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--orange-deep);
+  font-weight:300;
+}
+.pillar .glyph{
+  width: 56px; height: 56px;
+  border: 1px solid var(--line-soft);
+  border-radius: 50%;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom: 8px;
+  transition: border-color .4s var(--ease), background .4s var(--ease), color .4s var(--ease);
+}
+.pillar:hover .glyph{ border-color: var(--orange-deep); background: var(--orange-deep); color: var(--paper); }
+.pillar .glyph svg{ width:22px; height:22px; }
+.pillar p{ color: var(--ink-mute); font-size: 15.5px; line-height:1.6; }
+.pillar .more{
+  margin-top:auto;
+  font-size: 12px; letter-spacing:.16em; text-transform:uppercase;
+  color: var(--ink-mute);
+  display:inline-flex; align-items:center; gap:8px;
+  transition: color .3s var(--ease);
+}
+.pillar:hover .more{ color: var(--orange-deep); }
+
+@media (max-width: 900px){
+  .pillars{ grid-template-columns: 1fr; }
+  .pillar{ border-right: 0; min-height: auto; }
+}
+
+/* =========================================================
+   PORTFOLIO
+   ========================================================= */
+.portfolio{ background: var(--ink); color: var(--paper); position:relative; overflow:hidden; }
+.portfolio::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(1300px 800px at 90% 10%, rgba(216,90,26,.32), transparent 60%),
+    radial-gradient(1000px 700px at -5% 100%, rgba(184,80,31,.22), transparent 60%);
+  pointer-events:none;
+}
+.portfolio .wrap{ z-index:2; }
+.portfolio .eyebrow{ color: rgba(245,239,230,.80); }
+.portfolio .eyebrow .dot{ background: var(--orange-glow); }
+.portfolio h2{ color: var(--paper); }
+.portfolio h2 em{ color: var(--orange-glow); }
+.portfolio .lede{ color: rgba(245,239,230,.85); }
+
+.port-grid{
+  display:grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  margin-top: clamp(50px, 7vw, 80px);
+}
+.port-card{
+  background: rgba(245,239,230,.04);
+  border: 1px solid rgba(245,239,230,.10);
+  padding: 32px;
+  border-radius: 4px;
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column; justify-content:space-between;
+  min-height: 280px;
+  transition: background .4s var(--ease), border-color .4s var(--ease), transform .4s var(--ease);
+  }
+.port-card:hover{ background: rgba(216,90,26,.18); border-color: rgba(240,128,64,.55); transform: translateY(-3px); }
+
+.port-card .tag{
+  font-size: 10.5px; letter-spacing:.22em; text-transform:uppercase;
+  color: rgba(245,239,230,.78);
+  display:inline-flex; align-items:center; gap:8px;
+}
+.port-card .tag::before{ content:""; width:24px; height:1px; background: var(--orange-glow); }
+
+.port-card h3{
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(26px, 2.6vw, 38px);
+  line-height: 1.05;
+  letter-spacing:-.02em;
+  margin-top: 16px;
+  color: var(--paper);
+}
+.port-card h3 em{ font-style: italic; color: var(--orange-glow); font-weight:300; }
+.port-card p{ color: rgba(245,239,230,.85); font-size: 14.5px; line-height:1.55; margin-top: 12px; max-width: 36ch; }
+
+.port-card .corner{
+  position:absolute; top: 28px; right: 28px;
+  width: 30px; height: 30px;
+  border: 1px solid rgba(245,239,230,.25); border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 12px; color: rgba(245,239,230,.82);
+  transition: all .3s var(--ease);
+}
+.port-card:hover .corner{ background: var(--orange-deep); border-color: var(--orange-deep); color: var(--paper); transform: rotate(-45deg); }
+
+.port-card.feature{
+  grid-column: span 1;
+  grid-row: span 2;
+  min-height: 580px;
+  background: linear-gradient(160deg, rgba(216,90,26,.32), rgba(184,80,31,.12) 60%, rgba(245,239,230,.02));
+  border-color: rgba(240,128,64,.45);
+}
+.port-card.feature .tag{ color: var(--orange-glow); }
+.port-card.feature h3{ font-size: clamp(34px, 4vw, 56px); }
+
+@media (max-width: 1000px){
+  .port-grid{ grid-template-columns: 1fr 1fr; }
+  .port-card.feature{ grid-row: span 1; min-height: 320px; }
+}
+@media (max-width: 640px){
+  .port-grid{ grid-template-columns: 1fr; }
+  .port-card{ min-height: 220px; }
+  .port-card.feature{ min-height: 280px; }
+}
+
+/* =========================================================
+   OUR STORY
+   ========================================================= */
+.story{ position:relative; }
+.story-grid{
+  display:grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: clamp(40px, 7vw, 100px);
+  align-items: start;
+}
+@media (max-width: 900px){ .story-grid{ grid-template-columns: 1fr; } }
+
+.story h2{ margin-bottom: 28px; }
+.story h2 em{ font-style: italic; }
+.story-side{ position: sticky; top: 120px; }
+.story-side .label{ display:flex; flex-direction:column; gap:14px; margin-bottom: 32px; }
+.story-side .pull{
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight:300;
+  line-height: 1.25;
+  color: var(--ink);
+  border-left: 2px solid var(--orange);
+  padding: 8px 0 8px 22px;
+  margin-top: 28px;
+}
+.story-side .pull::before{
+  content:"“"; font-family: var(--serif); font-size: 56px; color: var(--orange);
+  line-height:0; vertical-align:-.45em; margin-right: 4px;
+}
+
+.duo{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 700px){ .duo{ grid-template-columns: 1fr; } }
+
+.bio{
+  border-top: 1px solid var(--line-soft);
+  padding-top: 26px;
+  position:relative;
+}
+.bio .marker{
+  position:absolute; top: -1px; left:0; height:1px; width: 64px; background: var(--orange);
+}
+.bio .name-line{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom: 14px; }
+.bio h3{
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(28px, 3vw, 38px);
+  letter-spacing:-.02em;
+  line-height:1;
+}
+.bio h3 em{ font-style: italic; color: var(--orange); font-weight:300; }
+.bio .role{
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing:.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.bio p{ color: var(--ink-soft); font-size: 16px; line-height: 1.65; }
+.bio p + p{ margin-top: 12px; }
+
+/* =========================================================
+   INVESTMENTS / WHERE WE INVEST
+   ========================================================= */
+.invest{ background: var(--paper-soft); position:relative; }
+.invest-head{
+  display:grid; grid-template-columns: 1fr 1.2fr; gap: clamp(30px, 6vw, 80px);
+  align-items: end; margin-bottom: clamp(50px, 7vw, 80px);
+}
+@media (max-width: 800px){ .invest-head{ grid-template-columns: 1fr; } }
+
+.focus-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line-soft);
+  border-left: 1px solid var(--line-soft);
+}
+.focus{
+  border-right: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+  padding: 36px 28px 32px;
+  position:relative;
+  display:flex; flex-direction:column; gap: 14px;
+  min-height: 200px;
+  background: transparent;
+  transition: background .4s var(--ease), color .4s var(--ease);
+  overflow:hidden;
+}
+.focus::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+  background: var(--orange);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .5s var(--ease);
+}
+.focus:hover{ background: var(--paper); }
+.focus:hover::after{ transform: scaleX(1); }
+.focus .num{ font-family: var(--serif); font-style:italic; font-weight:300; color: var(--orange-deep); font-size:13px; }
+.focus h3{
+  font-family: var(--serif);
+  font-weight:400;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height:1.1; letter-spacing:-.015em;
+}
+.focus p{ font-size: 14.5px; color: var(--ink-mute); line-height:1.55; }
+
+@media (max-width: 900px){
+  .focus-grid{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px){
+  .focus-grid{ grid-template-columns: 1fr; }
+}
+
+.invest-philosophy{
+  margin-top: clamp(60px, 8vw, 100px);
+  display:grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(30px, 6vw, 80px);
+  align-items:start;
+}
+@media (max-width: 800px){ .invest-philosophy{ grid-template-columns: 1fr; } }
+
+.invest-philosophy .pull-h{
+  font-family: var(--serif);
+  font-weight:300;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: .98;
+  letter-spacing:-.025em;
+}
+.invest-philosophy .pull-h em{ font-style: italic; color: var(--orange); }
+
+/* =========================================================
+   WOMEN & LEADERSHIP
+   ========================================================= */
+.women{ position:relative; overflow:hidden; }
+.women::before{
+  content:"";
+  position:absolute; right:-120px; top: 80px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle at center, rgba(216,90,26,.20), transparent 60%);
+  pointer-events:none;
+}
+
+.women-grid{
+  display:grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(40px, 7vw, 100px);
+  align-items:start;
+}
+@media (max-width: 900px){ .women-grid{ grid-template-columns: 1fr; } }
+
+.women h2{ margin: 24px 0 28px; }
+.women h2 em{ font-style: italic; }
+
+.themes{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 32px; }
+.theme{
+  font-family: var(--sans);
+  font-size: 13px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  background: var(--paper);
+  color: var(--ink-soft);
+  transition: all .3s var(--ease);
+  cursor: default;
+}
+.theme:hover{ background: var(--orange-deep); border-color: var(--orange-deep); color: var(--paper); transform: translateY(-2px); }
+
+.women-card{
+  background: linear-gradient(165deg, var(--orange-deep) 0%, #8F2F08 100%);
+  color: var(--paper);
+  padding: 44px 38px;
+  border-radius: 6px;
+  position:relative; overflow:hidden;
+  align-self:stretch;
+  box-shadow: 0 30px 60px -20px rgba(168,57,12,.35);
+}
+.women-card::before{
+  content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(700px 500px at 100% 0%, rgba(14,11,8,.10), transparent 60%),
+    radial-gradient(500px 400px at 0% 100%, rgba(14,11,8,.18), transparent 60%);
+  pointer-events:none;
+}
+.women-card .inner{ position:relative; z-index:2; }
+.women-card .label{ display:flex; align-items:center; gap:10px; }
+.women-card .label .dot{ width:6px; height:6px; border-radius:50%; background: var(--paper); }
+.women-card .label span{ font-size:11px; letter-spacing:.22em; text-transform:uppercase; color: rgba(245,239,230,.95); }
+
+.women-card h3{
+  font-family: var(--serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(34px, 4.4vw, 56px);
+  line-height: 1.02;
+  letter-spacing:-.02em;
+  margin-top: 18px;
+}
+.women-card .journal{
+  margin-top: 36px;
+  display:grid; grid-template-columns: 1fr; gap: 0;
+  border-top: 1px solid rgba(245,239,230,.28);
+}
+.women-card .entry{
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(245,239,230,.20);
+  display:flex; justify-content:space-between; align-items:center; gap: 16px;
+  transition: padding .3s var(--ease);
+}
+.women-card .entry:hover{ padding-left: 8px; }
+.women-card .entry .t{
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing:-.01em;
+  color: var(--paper);
+}
+.women-card .entry .m{
+  font-size:11px; letter-spacing:.18em; text-transform:uppercase; color: rgba(245,239,230,.95);
+}
+.women-card .entry:hover .t{ color: var(--ink); }
+.women-card .entry:hover .m{ color: var(--ink-soft); }
+
+/* =========================================================
+   ADVISORY
+   ========================================================= */
+.advisory{
+  background: linear-gradient(180deg, var(--paper) 0%, var(--paper-soft) 100%);
+}
+.adv-head{
+  display:grid; grid-template-columns: 1fr 1.2fr; gap: clamp(30px,6vw,80px); align-items:end;
+  margin-bottom: clamp(50px,7vw,80px);
+}
+@media (max-width: 800px){ .adv-head{ grid-template-columns: 1fr; } }
+
+.adv-grid{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(30px, 5vw, 60px);
+  align-items: start;
+}
+@media (max-width: 900px){ .adv-grid{ grid-template-columns: 1fr; } }
+
+.adv-areas{ display:flex; flex-direction:column; }
+.adv-row{
+  display:grid; grid-template-columns: 56px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 22px 4px;
+  border-top: 1px solid var(--line-soft);
+  transition: padding .35s var(--ease);
+}
+.adv-row:last-child{ border-bottom: 1px solid var(--line-soft); }
+.adv-row:hover{ padding-left: 14px; }
+.adv-row .n{
+  font-family: var(--serif); font-style:italic; color: var(--orange-deep); font-size:14px; font-weight:300;
+}
+.adv-row .t{
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(22px, 2.2vw, 30px);
+  letter-spacing:-.015em;
+  line-height:1.1;
+  transition: color .3s var(--ease);
+}
+.adv-row:hover .t{ color: var(--orange-deep); }
+.adv-row .arrow{
+  width:34px; height:34px; border-radius:50%; border:1px solid var(--line-soft);
+  display:flex; align-items:center; justify-content:center; font-size:13px;
+  transition: all .3s var(--ease);
+}
+.adv-row:hover .arrow{ background: var(--orange-deep); border-color: var(--orange-deep); color: var(--paper); transform: rotate(-45deg); }
+
+.adv-card{
+  position: sticky; top: 120px;
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  padding: 36px 32px;
+  border-radius: 6px;
+  display:flex; flex-direction:column; gap: 22px;
+  position:relative; overflow:hidden;
+}
+.adv-card::before{
+  content:""; position:absolute; top:0; left:0; right:0; height: 3px;
+  background: linear-gradient(90deg, var(--orange), var(--gold));
+}
+.adv-card .label{ font-family: var(--serif); font-style:italic; color: var(--orange-deep); font-size: 14px; }
+.adv-card h3{
+  font-family: var(--serif); font-weight:300;
+  font-size: clamp(28px, 3vw, 38px); letter-spacing:-.02em; line-height:1.05;
+}
+.adv-card h3 em{ font-style:italic; color: var(--orange); }
+.adv-card p{ color: var(--ink-mute); font-size: 15px; line-height:1.6; }
+.adv-card .list{ display:flex; flex-direction:column; gap: 8px; }
+.adv-card .list li{
+  list-style:none;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--line-soft);
+  display:flex; align-items:center; gap:10px;
+}
+.adv-card .list li::before{ content:""; width:5px; height:5px; background: var(--orange); border-radius:50%; }
+
+/* =========================================================
+   MEDIA
+   ========================================================= */
+.media{ background: var(--ink); color: var(--paper); position:relative; overflow:hidden; }
+.media::before{
+  content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(1100px 700px at 0% 0%, rgba(216,90,26,.28), transparent 55%),
+    radial-gradient(800px 600px at 100% 100%, rgba(184,80,31,.16), transparent 55%);
+  pointer-events:none;
+}
+.media .eyebrow{ color: rgba(245,239,230,.80); }
+.media .eyebrow .dot{ background: var(--orange-glow); }
+.media h2{ color: var(--paper); }
+.media h2 em{ color: var(--orange-glow); font-style:italic; }
+.media .lede{ color: rgba(245,239,230,.85); }
+
+.media-list{
+  margin-top: clamp(40px, 6vw, 70px);
+  border-top: 1px solid rgba(245,239,230,.14);
+}
+.media-row{
+  display:grid; grid-template-columns: 90px 1fr 1.4fr 100px;
+  gap: 24px; align-items:center;
+  padding: 24px 4px;
+  border-bottom: 1px solid rgba(245,239,230,.10);
+  position:relative;
+  transition: padding .35s var(--ease);
+}
+.media-row::before{
+  content:""; position:absolute; left:0; right:0; top:0; bottom:0;
+  background: linear-gradient(90deg, rgba(200,80,30,.10), transparent 70%);
+  opacity:0; transition: opacity .35s var(--ease);
+}
+.media-row:hover{ padding-left: 14px; }
+.media-row:hover::before{ opacity:1; }
+.media-row .col{ position:relative; z-index:2; }
+.media-row .date{ font-family: var(--serif); font-style:italic; font-size:14px; color: rgba(245,239,230,.80); font-weight:300; }
+.media-row .kind{
+  font-size:10.5px; letter-spacing:.22em; text-transform:uppercase;
+  color: var(--orange-glow);
+}
+.media-row .title{
+  font-family: var(--serif); font-weight: 400; font-size: clamp(20px, 1.9vw, 26px);
+  letter-spacing:-.015em; line-height:1.15; color: var(--paper);
+}
+.media-row .src{ font-size: 13px; color: rgba(245,239,230,.78); text-align:right; }
+.media-row:hover .title{ color: var(--orange-glow); }
+
+@media (max-width: 800px){
+  .media-row{ grid-template-columns: 1fr; gap: 8px; padding: 22px 4px; }
+  .media-row .src{ text-align:left; }
+}
+
+.media-topics{
+  margin-top: 50px;
+  display:flex; flex-wrap:wrap; gap:10px;
+}
+.media-topics .topic{
+  font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+  padding: 8px 14px; border-radius:999px;
+  border: 1px solid rgba(245,239,230,.18);
+  color: rgba(245,239,230,.85);
+}
+
+/* =========================================================
+   FOUNDATION
+   ========================================================= */
+.foundation{ position:relative; overflow:hidden; }
+.foundation::before{
+  content:"";
+  position:absolute; left:-200px; bottom:-200px;
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(216,90,26,.22), transparent 60%);
+  pointer-events:none;
+}
+.found-grid{
+  display:grid; grid-template-columns: 1fr 1.2fr; gap: clamp(40px,6vw,80px); align-items:start;
+}
+@media (max-width: 900px){ .found-grid{ grid-template-columns: 1fr; } }
+
+.found-side .pull{
+  font-family: var(--serif);
+  font-style: italic; font-weight:300;
+  font-size: clamp(34px, 4.4vw, 56px);
+  line-height: 1.02; letter-spacing:-.025em;
+  color: var(--ink); margin-top: 28px;
+}
+.found-side .pull em{ color: var(--orange); }
+
+.found-list{ display:flex; flex-direction:column; }
+.found-row{
+  display:grid; grid-template-columns: 60px 1fr;
+  gap: 24px;
+  padding: 26px 0;
+  border-top: 1px solid var(--line-soft);
+  align-items: start;
+}
+.found-row:last-child{ border-bottom: 1px solid var(--line-soft); }
+.found-row .n{ font-family: var(--serif); font-style:italic; color: var(--orange-deep); font-size: 14px; }
+.found-row h4{
+  font-family: var(--serif); font-weight:400;
+  font-size: clamp(22px, 2.2vw, 30px); letter-spacing:-.015em; line-height:1.1;
+  margin-bottom: 10px;
+}
+.found-row p{ color: var(--ink-mute); font-size: 15px; line-height:1.6; }
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+.contact{ background: var(--ink); color: var(--paper); position:relative; overflow:hidden; }
+.contact::before{
+  content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(1300px 800px at 100% 100%, rgba(216,90,26,.40), transparent 55%),
+    radial-gradient(900px 700px at 0% 0%, rgba(184,80,31,.22), transparent 55%);
+  pointer-events:none;
+}
+.contact .wrap{ z-index:2; }
+.contact .eyebrow{ color: rgba(245,239,230,.80); }
+.contact .eyebrow .dot{ background: var(--orange-glow); }
+
+.contact-grid{
+  display:grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 80px);
+  align-items:start;
+}
+@media (max-width: 900px){ .contact-grid{ grid-template-columns: 1fr; } }
+
+.contact h2{
+  color: var(--paper);
+  font-family: var(--serif); font-weight:300;
+  font-size: clamp(44px, 6vw, 84px);
+  line-height: .98; letter-spacing:-.025em;
+}
+.contact h2 em{ color: var(--orange-glow); font-style:italic; }
+.contact .lede{ color: rgba(245,239,230,.75); margin-top: 24px; max-width: 46ch; }
+
+.contact-info{ margin-top: 40px; display:grid; gap: 24px; }
+.info-item .k{ font-size:11px; letter-spacing:.22em; text-transform:uppercase; color: rgba(245,239,230,.78); margin-bottom: 6px; }
+.info-item .v{ font-family: var(--serif); font-weight:400; font-size: clamp(20px, 2vw, 26px); letter-spacing:-.015em; }
+.info-item .v a{ border-bottom: 1px solid var(--orange-glow); transition: border-color .3s var(--ease), color .3s var(--ease); }
+.info-item .v a:hover{ color: var(--orange-glow); border-color: var(--orange-glow); }
+
+/* Form */
+.form{
+  background: rgba(245,239,230,.04);
+  border: 1px solid rgba(245,239,230,.30);
+  padding: 36px 32px;
+  border-radius: 6px;
+  backdrop-filter: blur(6px);
+}
+.form .row{ display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 600px){ .form .row{ grid-template-columns: 1fr; } }
+
+.field{ margin-bottom: 18px; position:relative; }
+.field label{
+  display:block; font-size: 11px; letter-spacing: .22em; text-transform:uppercase;
+  color: rgba(245,239,230,.80); margin-bottom: 8px;
+}
+.field input, .field textarea, .field select{
+  width:100%;
+  background: transparent;
+  border: 0; border-bottom: 1px solid rgba(245,239,230,.45);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-size: 15px;
+  padding: 12px 0;
+  outline: none;
+  transition: border-color .3s var(--ease);
+  resize: vertical;
+}
+.field textarea{ min-height: 110px; }
+.field input:focus, .field textarea:focus, .field select:focus{ border-color: var(--orange-glow); }
+.field input::placeholder, .field textarea::placeholder{ color: rgba(245,239,230,.65); }
+
+.field select{
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23A8390C' stroke-width='1.5' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 24px;
+}
+.field select option{ background: var(--ink); color: var(--paper); }
+
+.form-submit{
+  width:100%;
+  margin-top: 12px;
+  padding: 16px 22px;
+  background: var(--orange-deep);
+  color: var(--paper);
+  font-family: var(--sans); font-size: 13px; font-weight: 500;
+  letter-spacing: .04em; text-transform: uppercase;
+  border-radius: 999px;
+  display:inline-flex; align-items:center; justify-content:center; gap: 12px;
+  transition: background .3s var(--ease), transform .3s var(--ease);
+}
+.form-submit:hover{ background: var(--paper); color: var(--ink); transform: translateY(-1px); }
+.form-submit .arrow{ transition: transform .3s var(--ease); }
+.form-submit:hover .arrow{ transform: translateX(4px); }
+
+.form-note{
+  font-size: 12px; letter-spacing:.05em;
+  color: rgba(245,239,230,.78);
+  margin-top: 14px; text-align:center;
+}
+
+.form-success{
+  display:none;
+  text-align:center;
+  padding: 30px 10px 6px;
+}
+.form-success .check{
+  width: 56px; height:56px; border-radius:50%;
+  background: rgba(232,118,62,.18); border:1px solid var(--orange-glow);
+  display:inline-flex; align-items:center; justify-content:center;
+  margin-bottom: 18px;
+  font-size: 22px; color: var(--orange-glow);
+}
+.form-success h4{ font-family: var(--serif); font-weight:300; font-style:italic; font-size: 28px; color: var(--paper); }
+.form-success p{ color: rgba(245,239,230,.85); margin-top: 10px; }
+.form.sent .form-grid{ display:none; }
+.form.sent .form-success{ display:block; }
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.foot{
+  background: var(--ink);
+  color: var(--paper);
+  padding: 60px 0 36px;
+  border-top: 1px solid rgba(245,239,230,.10);
+}
+.foot-top{
+  display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(245,239,230,.10);
+}
+@media (max-width: 800px){ .foot-top{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px){ .foot-top{ grid-template-columns: 1fr; } }
+
+.foot-brand{ font-family: var(--serif); }
+.foot-brand .mark{ font-style:italic; font-size: 30px; letter-spacing:-.02em; line-height:1; }
+.foot-brand .mark em{ color: var(--orange-glow); }
+.foot-brand p{ color: rgba(245,239,230,.82); margin-top: 16px; max-width: 32ch; font-size: 14px; line-height:1.6; }
+
+.foot-col h5{
+  font-family: var(--sans); font-weight:500;
+  font-size: 11px; letter-spacing:.22em; text-transform:uppercase;
+  color: var(--orange-glow);
+  margin-bottom: 18px;
+}
+.foot-col a{
+  display:block;
+  color: rgba(245,239,230,.85);
+  font-size: 14px;
+  padding: 6px 0;
+  transition: color .3s var(--ease), padding .3s var(--ease);
+}
+.foot-col a:hover{ color: var(--orange-glow); padding-left: 4px; }
+
+.foot-bottom{
+  margin-top: 30px;
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap: 14px;
+  font-size: 12px; color: rgba(245,239,230,.78);
+  letter-spacing:.05em;
+}
+.foot-bottom a{ color: rgba(245,239,230,.85); }
+.foot-bottom a:hover{ color: var(--orange-glow); }
+
+/* =========================================================
+   Reveal on scroll
+   ========================================================= */
+.reveal{ opacity:0; transform: translateY(20px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.in{ opacity:1; transform: translateY(0); }
+.reveal-stagger > *{ opacity:0; transform: translateY(20px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal-stagger.in > *{ opacity:1; transform: translateY(0); }
+.reveal-stagger.in > *:nth-child(1){ transition-delay: .05s; }
+.reveal-stagger.in > *:nth-child(2){ transition-delay: .15s; }
+.reveal-stagger.in > *:nth-child(3){ transition-delay: .25s; }
+.reveal-stagger.in > *:nth-child(4){ transition-delay: .35s; }
+.reveal-stagger.in > *:nth-child(5){ transition-delay: .45s; }
+.reveal-stagger.in > *:nth-child(6){ transition-delay: .55s; }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation: none !important; transition: none !important; }
+  .reveal, .reveal-stagger > *{ opacity:1; transform: none; }
+}
+
+/* Selection */
+::selection{ background: var(--orange); color: var(--paper); }
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+/* Skip to content link — visible on focus */
+.skip-link{
+  position: absolute;
+  left: 12px; top: -100px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 14px 22px;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  z-index: 100;
+  transition: top .2s var(--ease);
+  text-decoration: underline;
+}
+.skip-link:focus{
+  top: 12px;
+  outline: 3px solid var(--orange-glow);
+  outline-offset: 2px;
+}
+
+/* Visible focus indicators — required for WCAG 2.4.7 */
+*:focus{ outline: none; }
+*:focus-visible{
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.nav-cta:focus-visible,
+.btn:focus-visible,
+.form-submit:focus-visible{
+  outline-offset: 4px;
+}
+.field input:focus-visible,
+.field textarea:focus-visible,
+.field select:focus-visible{
+  outline: none;
+  border-bottom-color: var(--orange-glow);
+  box-shadow: 0 1px 0 0 var(--orange-glow);
+}
+/* Dark sections need lighter focus */
+.portfolio *:focus-visible,
+.media *:focus-visible,
+.contact *:focus-visible,
+.foot *:focus-visible{
+  outline-color: var(--orange-glow);
+}
+
+/* Screen-reader-only utility */
+.sr-only{
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* Required field indicator */
+.req{ color: var(--orange-deep); margin-left: 4px; }
+.contact .req{ color: var(--orange-glow); }
+
+/* Form error states */
+.field.error input,
+.field.error textarea,
+.field.error select{
+  border-bottom-color: #FF6B4A;
+  box-shadow: 0 1px 0 0 #FF6B4A;
+}
+.field-error{
+  display: none;
+  font-size: 13px;
+  color: #FFB199;
+  margin-top: 8px;
+  font-family: var(--sans);
+}
+.field.error .field-error{ display: block; }
+.field.error label{ color: #FFB199; }
+
+/* Reduced motion — comprehensive */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero h1 .inner{ transform: none !important; }
+  .hero-foot{ opacity: 1 !important; }
+  .strip-track{ animation: none !important; }
+  .reveal, .reveal-stagger > *{ opacity: 1 !important; transform: none !important; }
+}
+
+/* Forced colors / Windows High Contrast Mode */
+@media (forced-colors: active){
+  .btn, .nav-cta, .form-submit{ border: 2px solid currentColor; }
+  .pillar, .focus, .port-card, .adv-card, .women-card, .form{
+    border: 1px solid CanvasText;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- =========================================================
+     NAV
+========================================================= -->
+<header class="nav" id="nav" role="banner">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="Great Castle Partners home">
+      <span class="mark">Great <em>Castle</em></span>
+      <span class="sub">Partners</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#story">Our Story</a>
+      <a href="#investments">Investments</a>
+      <a href="#women">Women &amp; Leadership</a>
+      <a href="#advisory">Advisory</a>
+      <a href="#media">Media</a>
+      <a href="#foundation">Foundation</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Connect</a>
+    <button class="menu-btn" aria-label="Open navigation menu" id="menuBtn"
+            aria-expanded="false" aria-controls="mobileMenu"><span aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-top">
+    <a href="#top" class="brand" onclick="closeMenu()">
+      <span class="mark">Great <em>Castle</em></span>
+      <span class="sub">Partners</span>
+    </a>
+    <button class="close-x" id="closeMenu" aria-label="Close navigation menu"><span aria-hidden="true">×</span></button>
+  </div>
+  <nav>
+    <a href="#story" onclick="closeMenu()">Our Story</a>
+    <a href="#investments" onclick="closeMenu()">Investments</a>
+    <a href="#women" onclick="closeMenu()">Women &amp; Leadership</a>
+    <a href="#advisory" onclick="closeMenu()">Advisory</a>
+    <a href="#media" onclick="closeMenu()">Media</a>
+    <a href="#foundation" onclick="closeMenu()">Foundation</a>
+    <a href="#contact" onclick="closeMenu()">Connect</a>
+  </nav>
+</div>
+
+<main id="main-content">
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="hero" id="top" aria-labelledby="hero-heading">
+  <div class="wrap">
+    <div class="hero-meta">
+      <div class="item"><span class="dot"></span> Est. Private Capital · Advisory · Leadership</div>
+      <div class="item">A Woman‑Led Investment Platform</div>
+    </div>
+
+    <h1 class="display" id="hero-heading">
+      <span class="l1"><span class="inner">Building Legacies.</span></span>
+      <span class="l2"><span class="inner">Backing <em>Vision.</em></span></span>
+      <span class="l3"><span class="inner">Empowering Possibility.</span></span>
+    </h1>
+
+    <div class="hero-foot">
+      <p class="lede">
+        Great Castle Partners is a woman‑led private investment and advisory platform founded by
+        Marina Smith and Steven Smith — investing in transformative businesses, cultivating
+        leadership, and championing the next generation of entrepreneurs.
+      </p>
+      <div class="hero-ctas">
+        <a href="#investments" class="btn btn-primary">Explore Investments <span class="arrow">→</span></a>
+        <a href="#advisory" class="btn btn-ghost">Advisory &amp; Mentorship <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Capital <span class="sep"></span> Wisdom <span class="sep"></span> Purpose <span class="sep"></span> Capital <span class="sep"></span> Wisdom <span class="sep"></span> Purpose <span class="sep"></span> Capital <span class="sep"></span> Wisdom <span class="sep"></span> Purpose <span class="sep"></span></span>
+    <span>Capital <span class="sep"></span> Wisdom <span class="sep"></span> Purpose <span class="sep"></span> Capital <span class="sep"></span> Wisdom <span class="sep"></span> Purpose <span class="sep"></span> Capital <span class="sep"></span> Wisdom <span class="sep"></span> Purpose <span class="sep"></span></span>
+  </div>
+</div>
+
+<!-- =========================================================
+     PHILOSOPHY
+========================================================= -->
+<section class="section" id="philosophy" aria-labelledby="philosophy-heading">
+  <div class="wrap">
+    <div class="phil-head reveal">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span> Section 01 — Philosophy</div>
+        <span class="section-num">i.</span>
+      </div>
+      <h2 class="h-section" id="philosophy-heading">
+        At Great Castle, we believe experience should <em>compound into impact.</em>
+      </h2>
+    </div>
+
+    <div class="pillars reveal-stagger">
+      <article class="pillar">
+        <span class="num">i.</span>
+        <div class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21V11l9-7 9 7v10"/><path d="M9 21v-7h6v7"/></svg>
+        </div>
+        <h3 class="h-card">Investment</h3>
+        <p>Backing innovation, infrastructure, and transformative companies where utility creates lasting value.</p>
+        <span class="more">Our Portfolio →</span>
+      </article>
+
+      <article class="pillar">
+        <span class="num">ii.</span>
+        <div class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/><path d="M12 7v6l4 2"/></svg>
+        </div>
+        <h3 class="h-card">Thought Leadership</h3>
+        <p>Conversations and writing that inspire reinvention, leadership, and growth — at every stage.</p>
+        <span class="more">The Journal →</span>
+      </article>
+
+      <article class="pillar">
+        <span class="num">iii.</span>
+        <div class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19h16"/><path d="M6 19V9l6-4 6 4v10"/><path d="M10 19v-5h4v5"/></svg>
+        </div>
+        <h3 class="h-card">Advisory</h3>
+        <p>Helping founders and leaders navigate complexity, scale with confidence, and build legacy.</p>
+        <span class="more">Engage Advisory →</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PORTFOLIO
+========================================================= -->
+<section class="section portfolio" id="investments" aria-labelledby="investments-heading">
+  <div class="wrap">
+    <div class="phil-head reveal">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span> Section 02 — Featured Portfolio</div>
+        <span class="section-num" style="color:var(--orange-glow)">ii.</span>
+      </div>
+      <h2 class="h-section" id="investments-heading">
+        Companies and assets at the intersection of <em>innovation and utility.</em>
+      </h2>
+    </div>
+
+    <div class="port-grid reveal-stagger">
+      <article class="port-card feature">
+        <div>
+          <span class="tag">Digital Infrastructure</span>
+          <h3>6116<em>.ai</em></h3>
+          <p>AI‑native fintech platform engineering alpha from signal to execution — across social intelligence, real‑world assets, and autonomous trading.</p>
+        </div>
+        <div class="corner">→</div>
+      </article>
+
+      <article class="port-card">
+        <div>
+          <span class="tag">Real Estate</span>
+          <h3>Multifamily</h3>
+          <p>Long‑term, income‑producing real estate focused on durable value creation.</p>
+        </div>
+        <div class="corner">→</div>
+      </article>
+
+      <article class="port-card">
+        <div>
+          <span class="tag">Workflow AI</span>
+          <h3>Submittal Factory</h3>
+          <p>AI‑powered workflow automation for construction and procurement ecosystems.</p>
+        </div>
+        <div class="corner">→</div>
+      </article>
+
+      <article class="port-card">
+        <div>
+          <span class="tag">Special Situations</span>
+          <h3>Yield Bridge</h3>
+          <p>Special purpose strategies bridging traditional and digital asset opportunities.</p>
+        </div>
+        <div class="corner">→</div>
+      </article>
+
+      <article class="port-card">
+        <div>
+          <span class="tag">Emerging</span>
+          <h3>Selective <em>Mandates</em></h3>
+          <p>Targeted positions across AI infrastructure, SaaS, and digital asset markets.</p>
+        </div>
+        <div class="corner">→</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     OUR STORY
+========================================================= -->
+<section class="section story" id="story" aria-labelledby="story-heading">
+  <div class="wrap">
+    <div class="story-grid">
+      <aside class="story-side reveal">
+        <div class="label">
+          <div class="eyebrow"><span class="dot"></span> Section 03 — Our Story</div>
+          <span class="section-num">iii.</span>
+        </div>
+        <h2 class="h-section" id="story-heading">Marina &amp; <em>Steven.</em></h2>
+        <p class="body-rich">
+          Great Castle Partners was born from partnership — a decades‑long collaboration between
+          two builders with complementary instincts.
+        </p>
+        <div class="pull">
+          Capital, wisdom, and advocacy — working together.
+        </div>
+      </aside>
+
+      <div class="duo">
+        <article class="bio reveal">
+          <span class="marker"></span>
+          <div class="name-line">
+            <h3>Marina <em>Smith</em></h3>
+          </div>
+          <span class="role">Co‑Founder · Women &amp; Leadership Platform</span>
+          <p style="margin-top:18px">
+            Marina built her life through reinvention, resilience, and conviction. Her
+            journey — from early adversity to entrepreneurship and creative leadership —
+            shaped a vision centered on empowering women to lead boldly and build meaningfully.
+          </p>
+          <p>
+            Today, Marina leads Great Castle's women's leadership platform: a venue for
+            wealth literacy, confidence, reinvention, and purpose‑driven living.
+          </p>
+          <p>
+            A proud member of San Diego's Ukrainian immigrant community, Marina draws on
+            her heritage and origins as a wellspring of conviction — and channels that
+            spirit into a lasting philanthropic life. She serves with the Women's Fund of
+            Rancho Santa Fe and the Rancho Santa Fe Rotary Foundation, and remains active
+            with Country Friends and other organizations dedicated to community and cause.
+          </p>
+          <p>
+            Marina was recently featured on the cover of Modern Luxury San Diego, profiled
+            among the city's power players alongside her husband, Steven.
+          </p>
+        </article>
+
+        <article class="bio reveal">
+          <span class="marker"></span>
+          <div class="name-line">
+            <h3>Steven <em>Smith</em></h3>
+          </div>
+          <span class="role">Co‑Founder · Strategic Advisory</span>
+          <p style="margin-top:18px">
+            Steven founded GCommerce, an industry‑transforming SaaS platform for the
+            automotive aftermarket in North America, where he served as CEO and Chairman
+            for 22 years before leading the company to a public‑company exit to SPS Commerce
+            (NASDAQ: SPSC). He has since evolved into an advisor, investor, and leadership
+            strategist with deep relationships across institutional capital.
+          </p>
+          <p>
+            Today, Steven is Co‑Founder and CEO of 6116.ai and Submittal Factory, and a
+            General Partner with the 6116 Income and Alpha Funds. He leads Great Castle's
+            investment and advisory practice — partnering with founders on growth strategy,
+            exit preparation, and capital structure.
+          </p>
+          <p>
+            Steven also serves as a Chair with Vistage Worldwide, the world's largest
+            leadership development platform — a role through which he pays forward
+            accumulated wisdom and experience to mentor the next generation of business
+            leaders and entrepreneurs. He considers it a meaningful part of giving back
+            to the business community writ large.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     INVESTMENTS / WHERE WE INVEST
+========================================================= -->
+<section class="section invest" aria-labelledby="invest-heading">
+  <div class="wrap">
+    <div class="invest-head reveal">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span> Section 04 — Where We Invest</div>
+        <span class="section-num">iv.</span>
+      </div>
+      <h2 class="h-section" id="invest-heading">Six focus areas. <em>One conviction:</em> long‑term utility creates long‑term value.</h2>
+    </div>
+
+    <div class="focus-grid reveal-stagger">
+      <article class="focus">
+        <span class="num">01</span>
+        <h3>Artificial Intelligence</h3>
+        <p>Foundational and applied AI shaping the next decade of enterprise productivity.</p>
+      </article>
+      <article class="focus">
+        <span class="num">02</span>
+        <h3>SaaS Infrastructure</h3>
+        <p>Mission‑critical software with durable economics and category leadership.</p>
+      </article>
+      <article class="focus">
+        <span class="num">03</span>
+        <h3>Digital Assets</h3>
+        <p>Tokenized markets, on‑chain infrastructure, and institutional digital asset strategies.</p>
+      </article>
+      <article class="focus">
+        <span class="num">04</span>
+        <h3>Real Estate</h3>
+        <p>Income‑producing property with disciplined underwriting and long horizons.</p>
+      </article>
+      <article class="focus">
+        <span class="num">05</span>
+        <h3>Workflow Automation</h3>
+        <p>AI‑native automation across construction, procurement, and back‑office systems.</p>
+      </article>
+      <article class="focus">
+        <span class="num">06</span>
+        <h3>Emerging Technologies</h3>
+        <p>Selective positions where conviction, talent, and timing converge.</p>
+      </article>
+    </div>
+
+    <div class="invest-philosophy reveal">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span> Investment Philosophy</div>
+      </div>
+      <div>
+        <h3 class="pull-h">We invest in <em>builders</em> — founders, systems, and markets where utility compounds.</h3>
+        <p class="body-rich" style="margin-top:24px; max-width: 56ch;">
+          Our diligence is qualitative as much as quantitative. We back people we'd want in
+          the trenches with us, then bring decades of operating experience to bear — not to
+          dictate, but to accelerate.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     WOMEN & LEADERSHIP
+========================================================= -->
+<section class="section women" id="women" aria-labelledby="women-heading">
+  <div class="wrap">
+    <div class="women-grid">
+      <div class="reveal">
+        <div class="label">
+          <div class="eyebrow"><span class="dot"></span> Section 05 — Marina's Platform</div>
+          <span class="section-num">v.</span>
+        </div>
+        <h2 class="h-section" id="women-heading">Empowering women to build lives of <em>purpose.</em></h2>
+        <p class="body-rich" style="max-width: 52ch; margin-top: 14px;">
+          A platform built to support women in finding their voice, their confidence, and
+          their next chapter — through writing, conversation, and community.
+        </p>
+        <div class="themes">
+          <span class="theme">Reinvention</span>
+          <span class="theme">Entrepreneurship</span>
+          <span class="theme">Wealth Literacy</span>
+          <span class="theme">Confidence</span>
+          <span class="theme">Leadership</span>
+          <span class="theme">Purpose</span>
+        </div>
+        <div style="margin-top: 36px;">
+          <a href="#contact" class="btn btn-orange">Join the Platform <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <aside class="women-card reveal">
+        <div class="inner">
+          <div class="label"><span class="dot"></span><span>The Marina Journal</span></div>
+          <h3>Reinvention is a <br/>practice, not a moment.</h3>
+          <div class="journal">
+            <div class="entry">
+              <span class="t">On Building Wealth, Quietly</span>
+              <span class="m">Essay · 06 min</span>
+            </div>
+            <div class="entry">
+              <span class="t">The Confidence Compound</span>
+              <span class="m">Essay · 04 min</span>
+            </div>
+            <div class="entry">
+              <span class="t">A Woman's Second Act</span>
+              <span class="m">Conversation</span>
+            </div>
+            <div class="entry">
+              <span class="t">Power Without Apology</span>
+              <span class="m">Essay · 07 min</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     ADVISORY
+========================================================= -->
+<section class="section advisory" id="advisory" aria-labelledby="advisory-heading">
+  <div class="wrap">
+    <div class="adv-head reveal">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span> Section 06 — Advisory</div>
+        <span class="section-num">vi.</span>
+      </div>
+      <h2 class="h-section" id="advisory-heading">Strategic counsel for <em>founders and leaders.</em></h2>
+    </div>
+
+    <div class="adv-grid">
+      <div class="adv-areas reveal-stagger">
+        <div class="adv-row">
+          <span class="n">01</span>
+          <span class="t">Founder Coaching</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="adv-row">
+          <span class="n">02</span>
+          <span class="t">Growth Strategy</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="adv-row">
+          <span class="n">03</span>
+          <span class="t">Exit Preparation</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="adv-row">
+          <span class="n">04</span>
+          <span class="t">Leadership Development</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="adv-row">
+          <span class="n">05</span>
+          <span class="t">Capital Strategy</span>
+          <span class="arrow">→</span>
+        </div>
+        <div class="adv-row">
+          <span class="n">06</span>
+          <span class="t">Peer Advisory</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <aside class="adv-card reveal">
+        <span class="label">— Membership</span>
+        <h3>The Founder's <em>Chair.</em></h3>
+        <p>
+          A private membership for entrepreneurs and leaders seeking mentorship, strategic
+          counsel, and a peer network of operators who have built and exited.
+        </p>
+        <ul class="list">
+          <li>Private quarterly convenings</li>
+          <li>1:1 strategic counsel with Steven</li>
+          <li>Curated peer introductions</li>
+          <li>Exit &amp; capital planning sessions</li>
+        </ul>
+        <a href="#contact" class="btn btn-orange" style="align-self:flex-start; margin-top: 8px;">Request Invitation <span class="arrow">→</span></a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     MEDIA
+========================================================= -->
+<section class="section media" id="media" aria-labelledby="media-heading">
+  <div class="wrap">
+    <div class="phil-head reveal">
+      <div class="label">
+        <div class="eyebrow"><span class="dot"></span> Section 07 — Media &amp; Press</div>
+        <span class="section-num" style="color:var(--orange-glow)">vii.</span>
+      </div>
+      <h2 class="h-section" id="media-heading">Conversations, features, and <em>appearances.</em></h2>
+    </div>
+
+    <div class="media-list reveal-stagger">
+      <article class="media-row">
+        <span class="col date">— Forthcoming</span>
+        <span class="col kind">Interview</span>
+        <span class="col title">On Capital, Wisdom, and the Architecture of Legacy</span>
+        <span class="col src">Editorial</span>
+      </article>
+      <article class="media-row">
+        <span class="col date">— Forthcoming</span>
+        <span class="col kind">Feature</span>
+        <span class="col title">Women Building Wealth in the Age of Digital Assets</span>
+        <span class="col src">Profile</span>
+      </article>
+      <article class="media-row">
+        <span class="col date">— Forthcoming</span>
+        <span class="col kind">Talk</span>
+        <span class="col title">From SaaS to Strategy: A Founder's Second Act</span>
+        <span class="col src">Keynote</span>
+      </article>
+      <article class="media-row">
+        <span class="col date">— Forthcoming</span>
+        <span class="col kind">Essay</span>
+        <span class="col title">The Quiet Discipline of Long‑Term Investing</span>
+        <span class="col src">The Journal</span>
+      </article>
+    </div>
+
+    <div class="media-topics reveal">
+      <span class="topic">Leadership</span>
+      <span class="topic">Innovation</span>
+      <span class="topic">Women in Business</span>
+      <span class="topic">Entrepreneurship</span>
+      <span class="topic">Digital Assets</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOUNDATION
+========================================================= -->
+<section class="section foundation" id="foundation" aria-labelledby="foundation-heading">
+  <div class="wrap">
+    <div class="found-grid">
+      <div class="found-side reveal">
+        <div class="label">
+          <div class="eyebrow"><span class="dot"></span> Section 08 — The Foundation</div>
+          <span class="section-num">viii.</span>
+        </div>
+        <h2 class="h-section" id="foundation-heading" style="margin-top:14px;">Great Castle <em>Foundation.</em></h2>
+        <p class="body-rich" style="margin-top:18px; max-width:42ch;">
+          Purpose beyond profit. A philanthropic platform supporting causes our founders have
+          lived, witnessed, and been shaped by.
+        </p>
+        <div class="pull">Capital is not the end. <em>Impact is.</em></div>
+      </div>
+
+      <div class="found-list reveal-stagger">
+        <div class="found-row">
+          <span class="n">01</span>
+          <div>
+            <h4>Women's Empowerment</h4>
+            <p>Programs supporting women in entrepreneurship, leadership, and financial independence.</p>
+          </div>
+        </div>
+        <div class="found-row">
+          <span class="n">02</span>
+          <div>
+            <h4>Human Trafficking Prevention</h4>
+            <p>Supporting organizations on the front line of prevention, recovery, and survivor advocacy.</p>
+          </div>
+        </div>
+        <div class="found-row">
+          <span class="n">03</span>
+          <div>
+            <h4>Entrepreneurial Education</h4>
+            <p>Funding access, mentorship, and curriculum for the next generation of builders.</p>
+          </div>
+        </div>
+        <div class="found-row">
+          <span class="n">04</span>
+          <div>
+            <h4>Military Family Support</h4>
+            <p>Honoring service through programs that strengthen the families who carry it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+<section class="section contact" id="contact" aria-labelledby="contact-heading">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="label" style="margin-bottom:18px;">
+          <div class="eyebrow"><span class="dot"></span> Section 09 — Connect</div>
+        </div>
+        <h2 id="contact-heading">Let's <em>build</em> something with intention.</h2>
+        <p class="lede">
+          For investment opportunities, advisory engagement, speaking inquiries,
+          and strategic partnerships — reach out directly.
+        </p>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:hello@greatcastle.partners">hello@greatcastle.partners</a></div>
+          </div>
+          <div class="info-item">
+            <div class="k">Investor Relations</div>
+            <div class="v"><a href="mailto:ir@greatcastle.partners">ir@greatcastle.partners</a></div>
+          </div>
+          <div class="info-item">
+            <div class="k">Office</div>
+            <div class="v">By appointment only</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="form reveal" id="contactForm" novalidate aria-labelledby="contact-form-heading">
+        <h3 id="contact-form-heading" class="sr-only">Contact inquiry form</h3>
+        <p id="form-instructions" class="sr-only">All fields marked with an asterisk are required. Submit the form to send your inquiry.</p>
+        <div class="form-grid" aria-describedby="form-instructions">
+          <div class="row">
+            <div class="field">
+              <label for="fname">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="fname" name="fname" type="text" placeholder="Marina"
+                     required aria-required="true" autocomplete="given-name"
+                     aria-describedby="fname-error" />
+              <span id="fname-error" class="field-error" role="alert">Please enter your first name.</span>
+            </div>
+            <div class="field">
+              <label for="lname">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="lname" name="lname" type="text" placeholder="Smith"
+                     required aria-required="true" autocomplete="family-name"
+                     aria-describedby="lname-error" />
+              <span id="lname-error" class="field-error" role="alert">Please enter your last name.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@firm.com"
+                   required aria-required="true" autocomplete="email"
+                   aria-describedby="email-error" />
+            <span id="email-error" class="field-error" role="alert">Please enter a valid email address.</span>
+          </div>
+
+          <div class="field">
+            <label for="org">Organization</label>
+            <input id="org" name="org" type="text" placeholder="Company / Family Office"
+                   autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="topic">Inquiry <span class="req" aria-hidden="true">*</span></label>
+            <select id="topic" name="topic" required aria-required="true"
+                    aria-describedby="topic-error">
+              <option value="">Please select…</option>
+              <option>Investment Opportunity</option>
+              <option>Advisory Engagement</option>
+              <option>Speaking / Editorial</option>
+              <option>Foundation</option>
+              <option>General</option>
+            </select>
+            <span id="topic-error" class="field-error" role="alert">Please select an inquiry type.</span>
+          </div>
+
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="4"
+                      placeholder="Tell us a little about what you're building…"></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            Send Inquiry <span class="arrow" aria-hidden="true">→</span>
+          </button>
+
+          <p class="form-note"><span class="req" aria-hidden="true">*</span> Required field · Responses within 48 hours · By appointment only</p>
+        </div>
+
+        <div class="form-success" role="status" aria-live="polite" aria-atomic="true">
+          <div class="check" aria-hidden="true">✓</div>
+          <h4>Thank you.</h4>
+          <p>Your inquiry has been received. We'll be in touch shortly.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     ACCESSIBILITY STATEMENT
+========================================================= -->
+<section class="section a11y-statement" id="accessibility" aria-labelledby="a11y-heading" style="padding: clamp(60px, 8vw, 100px) 0; border-top: 1px solid var(--line-soft);">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 1fr 2fr; gap: clamp(30px, 6vw, 80px); align-items:start;" class="reveal">
+      <div>
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Accessibility</div>
+        <h2 class="h-section" id="a11y-heading" style="margin-top:14px;">Built for <em>everyone.</em></h2>
+      </div>
+      <div class="body-rich" style="max-width: 64ch;">
+        <p>
+          Great Castle Partners is committed to ensuring digital accessibility for people with
+          disabilities. We are continually improving the user experience for everyone and applying
+          the relevant accessibility standards.
+        </p>
+        <p>
+          This site has been designed to conform to the Web Content Accessibility Guidelines
+          (WCAG) 2.1 Level AA published by the W3C, the standard adopted under the Americans with
+          Disabilities Act and California's Unruh Civil Rights Act.
+        </p>
+        <p>
+          If you encounter an accessibility barrier, or need any portion of this site provided in
+          an alternative format, please contact us at
+          <a href="mailto:accessibility@greatcastle.partners" style="border-bottom: 1px solid var(--orange-deep); color: var(--orange-deep);">accessibility@greatcastle.partners</a>.
+          We will respond within five business days.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="mark">Great <em>Castle</em></div>
+        <p>A woman‑led private investment and advisory platform — investing in transformative businesses, cultivating leadership, and championing the next generation.</p>
+      </div>
+
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="#investments">Investments</a>
+        <a href="#advisory">Advisory</a>
+        <a href="#women">Women &amp; Leadership</a>
+        <a href="#foundation">Foundation</a>
+      </div>
+
+      <div class="foot-col">
+        <h5>Discover</h5>
+        <a href="#story">Our Story</a>
+        <a href="#media">Media</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#contact">Connect</a>
+      </div>
+
+      <div class="foot-col">
+        <h5>Connect</h5>
+        <a href="mailto:hello@greatcastle.partners">hello@greatcastle.partners</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Substack</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <div>© <span id="year"></span> Great Castle Partners. All rights reserved.</div>
+      <div>
+        <a href="#disclosures">Disclosures</a> &nbsp;·&nbsp;
+        <a href="#privacy">Privacy</a> &nbsp;·&nbsp;
+        <a href="#terms">Terms</a> &nbsp;·&nbsp;
+        <a href="#accessibility">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if(window.scrollY > 18) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Mobile menu — accessible disclosure with focus trap and ESC support
+  const menuBtn = document.getElementById('menuBtn');
+  const closeBtn = document.getElementById('closeMenu');
+  const mobile = document.getElementById('mobileMenu');
+  let lastFocusedBeforeMenu = null;
+
+  function openMenu(){
+    lastFocusedBeforeMenu = document.activeElement;
+    mobile.classList.add('open');
+    mobile.setAttribute('aria-hidden','false');
+    menuBtn.setAttribute('aria-expanded','true');
+    document.body.style.overflow='hidden';
+    // Move focus into the menu
+    setTimeout(() => closeBtn.focus(), 100);
+  }
+  function closeMenu(){
+    mobile.classList.remove('open');
+    mobile.setAttribute('aria-hidden','true');
+    menuBtn.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+    // Restore focus
+    if(lastFocusedBeforeMenu) lastFocusedBeforeMenu.focus();
+  }
+  window.closeMenu = closeMenu;
+  menuBtn && menuBtn.addEventListener('click', openMenu);
+  closeBtn && closeBtn.addEventListener('click', closeMenu);
+
+  // ESC key closes menu
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && mobile.classList.contains('open')){
+      closeMenu();
+    }
+  });
+
+  // Focus trap inside open menu
+  mobile.addEventListener('keydown', (e) => {
+    if(e.key !== 'Tab' || !mobile.classList.contains('open')) return;
+    const focusables = mobile.querySelectorAll('a, button');
+    if(!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if(e.shiftKey && document.activeElement === first){
+      e.preventDefault(); last.focus();
+    } else if(!e.shiftKey && document.activeElement === last){
+      e.preventDefault(); first.focus();
+    }
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+  // Form — accessible per-field validation
+  const form = document.getElementById('contactForm');
+
+  function validateField(field, errorId){
+    const wrapper = field.closest('.field');
+    const errorEl = document.getElementById(errorId);
+    let valid = true;
+
+    if(field.required && !field.value.trim()){
+      valid = false;
+    } else if(field.type === 'email' && field.value){
+      // Basic email check
+      valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+    }
+
+    if(!valid){
+      wrapper.classList.add('error');
+      field.setAttribute('aria-invalid', 'true');
+    } else {
+      wrapper.classList.remove('error');
+      field.removeAttribute('aria-invalid');
+    }
+    return valid;
+  }
+
+  // Re-validate on blur once user has moved off a field
+  ['fname','lname','email','topic'].forEach(name => {
+    const f = form.elements[name];
+    if(f){
+      f.addEventListener('blur', () => {
+        if(f.dataset.touched === 'true'){
+          validateField(f, name + '-error');
+        }
+      });
+      f.addEventListener('change', () => {
+        f.dataset.touched = 'true';
+      });
+      f.addEventListener('input', () => {
+        // Clear error as soon as they start fixing it
+        if(f.closest('.field').classList.contains('error') && f.value.trim()){
+          validateField(f, name + '-error');
+        }
+      });
+    }
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Validate all required fields
+    const checks = [
+      { field: form.fname, error: 'fname-error' },
+      { field: form.lname, error: 'lname-error' },
+      { field: form.email, error: 'email-error' },
+      { field: form.topic, error: 'topic-error' },
+    ];
+
+    let firstInvalid = null;
+    checks.forEach(c => {
+      const ok = validateField(c.field, c.error);
+      if(!ok && !firstInvalid) firstInvalid = c.field;
+    });
+
+    if(firstInvalid){
+      // Focus the first invalid field — required for keyboard users
+      firstInvalid.focus();
+      return;
+    }
+
+    form.classList.add('sent');
+    // Move focus to success message so screen readers and keyboard users hear it
+    const success = form.querySelector('.form-success');
+    success.setAttribute('tabindex', '-1');
+    success.focus();
+
+    // In production, replace with a real submit (e.g. Formspree / serverless endpoint).
+  });
+</script>
+
+</body>
+</html>
